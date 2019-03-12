@@ -6,7 +6,7 @@ Description: The custom Gutenberg blocks of sebastiano.riva (office)
 Author: sebastiano.riva (office)
 Author URI: http://www.sebastianoriva.com/
 Text Domain: sro-gutenberg
-Version: 0.1
+Version: 1.0
 */
 
 defined('ABSPATH') || exit;
