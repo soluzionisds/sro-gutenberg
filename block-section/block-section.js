@@ -25,7 +25,7 @@ wp.blocks.registerBlockType('sro-gutenberg/block-section', {
 
     return wp.element.createElement(
       "div", { className: 'sro-gutenberg-block-section-backend-style' },
-      wp.element.createElement("h4", { className: 'sro-gutenberg-block-section-backend-style__title'}, "Section Block"),
+      wp.element.createElement("h4", { className: 'sro-gutenberg-block-section-backend-style__title'}, "Block Section"),
       wp.element.createElement("input", { type: "text", placeholder: "Title", className: 'sro-gutenberg-block-section-backend-style__input', value: props.attributes.title, onChange: updateTitle }),
       wp.element.createElement("input", { type: "text", placeholder: "Link", className: 'sro-gutenberg-block-section-backend-style__input', value: props.attributes.link, onChange: updateLink }),
       wp.element.createElement("input", { type: "text", placeholder: "Color (hexadecimal)", className: 'sro-gutenberg-block-section-backend-style__input', value: props.attributes.color, onChange: updateColor }),
