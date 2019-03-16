@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: sr(o) Gutenberg Blocks
-Plugin URI:  https://github.com/soluzionisds/eurscva.git
+Plugin URI: https://github.com/soluzionisds/sro-gutenberg
 Description: The custom Gutenberg blocks of sebastiano.riva (office)
 Author: sebastiano.riva (office)
 Author URI: http://www.sebastianoriva.com/
