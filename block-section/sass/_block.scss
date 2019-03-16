@@ -1,0 +1,56 @@
+$scale: scale(1.05) ;
+$transition: all .2s ease-in-out;
+
+.wp-block-sro-gutenberg-block-section {
+  //position: relative;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+
+  z-index: 0;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+
+
+  &:hover {
+    z-index: 1;
+    -ms-transform: $scale;
+    -moz-transform: $scale;
+    -webkit-transform: $scale;
+    -o-transform: $scale;
+    transform: $scale;
+  }
+
+  &__link {
+    //position: absolute;
+		display: block;
+    word-wrap: break-word;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+  }
+
+  &__title {
+		display: block;
+		color: #FFF;
+		padding: 1.5rem;
+		font-size: $font__size-md;
+    line-height: 1.3rem;
+    font-weight: 500;
+    padding: 3rem 1.5rem;
+  }
+
+}
+
+@include media(desktop) {
+  .wp-block-sro-gutenberg-block-section {
+    &__title {
+      font-size: $font__size-lg;
+      line-height: 1.8rem;
+      padding: 1.5rem 1.5rem 6rem 1.5rem;
+    }
+  }
+}

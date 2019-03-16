@@ -1,0 +1,32 @@
+
+$mobile_width: 600px;
+$tablet_width: 768px;
+$desktop_width: 1168px;
+$wide_width: 1379px;
+
+/* Media query */
+@mixin media( $res ) {
+	@if mobile == $res {
+		@media only screen and (min-width: $mobile_width) {
+			@content;
+		}
+	}
+
+	@if tablet == $res {
+		@media only screen and (min-width: $tablet_width) {
+			@content;
+		}
+	}
+
+	@if desktop == $res {
+		@media only screen and (min-width: $desktop_width) {
+			@content;
+		}
+	}
+
+	@if wide == $res {
+		@media only screen and (min-width: $wide_width) {
+			@content;
+		}
+	}
+}

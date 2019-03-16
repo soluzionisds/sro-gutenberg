@@ -1,13 +1,19 @@
+/* general */
+@font-face {
+  @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500,700");
+  font-family: "Roboto Condensed", sans-serif;
+}
+/* Media query */
+/* Block */
 .wp-block-sro-gutenberg-block-section {
-  position: relative;
   overflow: hidden;
   display: block;
-  min-height: 15rem;
+  height: 100%;
   z-index: 0;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .wp-block-sro-gutenberg-block-section:hover {
   z-index: 1;
@@ -18,8 +24,8 @@
   transform: scale(1.05);
 }
 .wp-block-sro-gutenberg-block-section__link {
-  position: absolute;
   display: block;
+  word-wrap: break-word;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,8 +35,18 @@
   display: block;
   color: #FFF;
   padding: 1.5rem;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 1.3rem;
+  font-weight: 500;
+  padding: 3rem 1.5rem;
+}
+
+@media only screen and (min-width: 1168px) {
+  .wp-block-sro-gutenberg-block-section__title {
+    font-size: 1.6875em;
+    line-height: 1.8rem;
+    padding: 1.5rem 1.5rem 6rem 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
