@@ -2,7 +2,7 @@ $scale: scale(1.05) ;
 $transition: all .2s ease-in-out;
 
 .wp-block-sro-gutenberg-block-section {
-  //position: relative;
+  position: relative;
   overflow: hidden;
   display: block;
   height: 100%;
@@ -21,6 +21,7 @@ $transition: all .2s ease-in-out;
     -webkit-transform: $scale;
     -o-transform: $scale;
     transform: $scale;
+    box-shadow: 8px 8px 30px rgba(0,0,0,0.4);
   }
 
   &__link {
@@ -38,7 +39,7 @@ $transition: all .2s ease-in-out;
 		color: #FFF;
 		padding: 1.5rem;
 		font-size: $font__size-md;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     font-weight: 500;
     padding: 3rem 1.5rem;
   }
@@ -48,9 +49,24 @@ $transition: all .2s ease-in-out;
 @include media(desktop) {
   .wp-block-sro-gutenberg-block-section {
     &__title {
-      font-size: $font__size-lg;
-      line-height: 1.8rem;
-      padding: 1.5rem 1.5rem 6rem 1.5rem;
+      padding: 1.5rem;
+      min-height: 12rem;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////
+// in wp-block-columns WordPress
+//
+@include media(desktop) {
+  .wp-block-columns.has-4-columns {
+    .wp-block-sro-gutenberg-block-section {
+      &__title { min-height: 12rem;  }
+    }
+  }
+  .wp-block-columns.has-5-columns {
+    .wp-block-sro-gutenberg-block-section {
+      &__title { min-height: 10rem;  }
     }
   }
 }
