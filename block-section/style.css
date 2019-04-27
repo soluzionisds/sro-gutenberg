@@ -50,6 +50,14 @@
   }
 }
 @media only screen and (min-width: 1168px) {
+  .wp-block-columns.has-2-columns .wp-block-sro-gutenberg-block-section__title {
+    min-height: 16rem;
+  }
+
+  .wp-block-columns.has-3-columns .wp-block-sro-gutenberg-block-section__title {
+    min-height: 15rem;
+  }
+
   .wp-block-columns.has-4-columns .wp-block-sro-gutenberg-block-section__title {
     min-height: 12rem;
   }
