@@ -16,15 +16,6 @@
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.wp-block-sro-gutenberg-block-section:hover {
-  z-index: 1;
-  -ms-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
-  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
-}
 .wp-block-sro-gutenberg-block-section__link {
   display: block;
   word-wrap: break-word;
@@ -47,6 +38,15 @@
   .wp-block-sro-gutenberg-block-section__title {
     padding: 1.5rem;
     min-height: 12rem;
+  }
+  .wp-block-sro-gutenberg-block-section:hover {
+    z-index: 1;
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
   }
 }
 @media only screen and (min-width: 1168px) {
